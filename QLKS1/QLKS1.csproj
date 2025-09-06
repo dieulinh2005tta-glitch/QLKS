@@ -58,6 +58,12 @@
     <Compile Include="All User Control\UC_AddRoom.Designer.cs">
       <DependentUpon>UC_AddRoom.cs</DependentUpon>
     </Compile>
+    <Compile Include="All User Control\UC_CustomerRes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_CustomerRes.Designer.cs">
+      <DependentUpon>UC_CustomerRes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>

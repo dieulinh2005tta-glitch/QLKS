@@ -23,7 +23,7 @@ namespace QLKS1.All_User_Control
         {
             query = "select * from rooms";
             DataSet ds = fn.GetData(query);
-            dataGridView1.DataSource = ds.Tables[0];
+            DataGridView1.DataSource = ds.Tables[0];
 
         }
 
@@ -38,12 +38,16 @@ namespace QLKS1.All_User_Control
 
 
 
-                query = "insert into rooms (roomNo, roomType, bed, price) values ('" + roomno + "','" + type + "','" + bed + "','" + price + ")";
+                query = "insert into rooms (roomNo, roomType, bed, price) values ('" + roomno + "','" + type + "','" + bed + "'," + price + ")";
                 fn.setData(query, "Đã Thêm Phòng");
 
                 UC_AddRoom_Load(this, null);
                 clearAll();
 
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Warning !", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 
@@ -53,6 +57,16 @@ namespace QLKS1.All_User_Control
             txtRoomType.SelectedIndex = -1;
             txtBed.SelectedIndex = -1;
             txtPrice.Clear();
+        }
+
+        private void UC_AddRoom_Leave(object sender, EventArgs e)
+        {
+            clearAll();
+        }
+
+        private void UC_AddRoom_Enter(object sender, EventArgs e)
+        {
+            UC_AddRoom_Load(this, null);
         }
     }
 }
