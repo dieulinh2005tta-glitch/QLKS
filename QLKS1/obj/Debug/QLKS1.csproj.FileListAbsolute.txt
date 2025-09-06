@@ -1,0 +1,14 @@
+D:\XDPMQLKS\QLKS1\QLKS1\bin\Debug\QLKS1.exe.config
+D:\XDPMQLKS\QLKS1\QLKS1\bin\Debug\QLKS1.exe
+D:\XDPMQLKS\QLKS1\QLKS1\bin\Debug\QLKS1.pdb
+D:\XDPMQLKS\QLKS1\QLKS1\bin\Debug\Guna.UI2.dll
+D:\XDPMQLKS\QLKS1\QLKS1\obj\Debug\QLKS1.csproj.AssemblyReference.cache
+D:\XDPMQLKS\QLKS1\QLKS1\obj\Debug\QLKS1.Form1.resources
+D:\XDPMQLKS\QLKS1\QLKS1\obj\Debug\QLKS1.Properties.Resources.resources
+D:\XDPMQLKS\QLKS1\QLKS1\obj\Debug\QLKS1.csproj.GenerateResource.cache
+D:\XDPMQLKS\QLKS1\QLKS1\obj\Debug\QLKS1.csproj.CoreCompileInputs.cache
+D:\XDPMQLKS\QLKS1\QLKS1\obj\Debug\QLKS1.csproj.Up2Date
+D:\XDPMQLKS\QLKS1\QLKS1\obj\Debug\QLKS1.exe
+D:\XDPMQLKS\QLKS1\QLKS1\obj\Debug\QLKS1.pdb
+D:\XDPMQLKS\QLKS1\QLKS1\obj\Debug\QLKS1.Dashboard.resources
+D:\XDPMQLKS\QLKS1\QLKS1\obj\Debug\QLKS1.All_User_Control.UC_AddRoom.resources
