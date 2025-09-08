@@ -23,6 +23,13 @@ namespace QLKS1
             Application.Exit();
             
         }
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+            uC_AddRoom1.Visible = false;
+            uC_CustomerRes1.Visible = false;
+            btnAddRoom.PerformClick();
+        }
+
 
         private void btnAddRoom_Click(object sender, EventArgs e)
         {
@@ -31,10 +38,12 @@ namespace QLKS1
             uC_AddRoom1.BringToFront();
         }
 
-        private void Dashboard_Load(object sender, EventArgs e)
+      
+        private void btnCustomerRes_Click(object sender, EventArgs e)
         {
-            uC_AddRoom1.Visible=false;  
-            btnAddRoom.PerformClick();
+            PanelMoving.Left= btnCustomerRes.Left + 50;
+            uC_CustomerRes1.Visible = true;
+            uC_CustomerRes1.BringToFront();
         }
     }
 }

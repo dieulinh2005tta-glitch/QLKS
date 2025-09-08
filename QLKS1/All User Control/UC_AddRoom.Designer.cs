@@ -44,6 +44,8 @@
             this.btnAddRoom = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.btnSua = new Guna.UI2.WinForms.Guna2Button();
+            this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,18 +57,18 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(200, 35);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Them Phong";
+            this.label1.Text = "Thêm Phòng";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(1096, 127);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 21);
+            this.label2.Size = new System.Drawing.Size(84, 22);
             this.label2.TabIndex = 2;
-            this.label2.Text = "So Phong";
+            this.label2.Text = "Số Phòng";
             // 
             // txtRoomNo
             // 
@@ -100,8 +102,9 @@
             this.txtRoomType.ForeColor = System.Drawing.Color.Black;
             this.txtRoomType.ItemHeight = 30;
             this.txtRoomType.Items.AddRange(new object[] {
-            "Ac",
-            "Non-Ac"});
+            "Don",
+            "Doi",
+            "VIP"});
             this.txtRoomType.Location = new System.Drawing.Point(1088, 318);
             this.txtRoomType.Name = "txtRoomType";
             this.txtRoomType.Size = new System.Drawing.Size(609, 36);
@@ -110,13 +113,13 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(1096, 278);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(107, 21);
+            this.label3.Size = new System.Drawing.Size(99, 22);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Loai Phong";
+            this.label3.Text = "Loại Phòng";
             // 
             // txtPrice
             // 
@@ -142,24 +145,24 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(1096, 533);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 21);
+            this.label4.Size = new System.Drawing.Size(79, 22);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Gia Tien";
+            this.label4.Text = "Giá Tiền";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(1096, 399);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(115, 21);
+            this.label5.Size = new System.Drawing.Size(111, 22);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Loai Giuong";
+            this.label5.Text = "Loại Giường";
             // 
             // txtBed
             // 
@@ -172,9 +175,9 @@
             this.txtBed.ForeColor = System.Drawing.Color.Black;
             this.txtBed.ItemHeight = 30;
             this.txtBed.Items.AddRange(new object[] {
-            "Single",
-            "Double",
-            "Triple"});
+            "Don",
+            "Doi",
+            "Ba"});
             this.txtBed.Location = new System.Drawing.Point(1088, 439);
             this.txtBed.Name = "txtBed";
             this.txtBed.Size = new System.Drawing.Size(609, 36);
@@ -191,14 +194,14 @@
             this.btnAddRoom.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAddRoom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAddRoom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAddRoom.FillColor = System.Drawing.Color.White;
+            this.btnAddRoom.FillColor = System.Drawing.Color.RosyBrown;
             this.btnAddRoom.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnAddRoom.ForeColor = System.Drawing.Color.Black;
-            this.btnAddRoom.Location = new System.Drawing.Point(1431, 703);
+            this.btnAddRoom.Location = new System.Drawing.Point(1067, 709);
             this.btnAddRoom.Name = "btnAddRoom";
-            this.btnAddRoom.Size = new System.Drawing.Size(266, 69);
+            this.btnAddRoom.Size = new System.Drawing.Size(122, 69);
             this.btnAddRoom.TabIndex = 10;
-            this.btnAddRoom.Text = "Them Phong";
+            this.btnAddRoom.Text = "Thêm";
             this.btnAddRoom.Click += new System.EventHandler(this.btnAddRoom_Click);
             // 
             // guna2Elipse1
@@ -219,7 +222,8 @@
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridView1.ColumnHeadersHeight = 4;
+            this.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -247,7 +251,7 @@
             this.DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
             this.DataGridView1.ThemeStyle.ReadOnly = false;
             this.DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -257,11 +261,56 @@
             this.DataGridView1.ThemeStyle.RowsStyle.Height = 24;
             this.DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.DataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellClick);
+            // 
+            // btnSua
+            // 
+            this.btnSua.BorderRadius = 18;
+            this.btnSua.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            this.btnSua.BorderThickness = 1;
+            this.btnSua.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
+            this.btnSua.CheckedState.ForeColor = System.Drawing.Color.White;
+            this.btnSua.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSua.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSua.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSua.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSua.FillColor = System.Drawing.Color.RosyBrown;
+            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnSua.ForeColor = System.Drawing.Color.Black;
+            this.btnSua.Location = new System.Drawing.Point(1319, 709);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(122, 69);
+            this.btnSua.TabIndex = 12;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.BorderRadius = 18;
+            this.btnXoa.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            this.btnXoa.BorderThickness = 1;
+            this.btnXoa.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
+            this.btnXoa.CheckedState.ForeColor = System.Drawing.Color.White;
+            this.btnXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXoa.FillColor = System.Drawing.Color.RosyBrown;
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnXoa.ForeColor = System.Drawing.Color.Black;
+            this.btnXoa.Location = new System.Drawing.Point(1551, 709);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(122, 69);
+            this.btnXoa.TabIndex = 13;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // UC_AddRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.btnSua);
             this.Controls.Add(this.DataGridView1);
             this.Controls.Add(this.btnAddRoom);
             this.Controls.Add(this.label5);
@@ -298,5 +347,7 @@
         private Guna.UI2.WinForms.Guna2Button btnAddRoom;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2DataGridView DataGridView1;
+        private Guna.UI2.WinForms.Guna2Button btnXoa;
+        private Guna.UI2.WinForms.Guna2Button btnSua;
     }
 }
