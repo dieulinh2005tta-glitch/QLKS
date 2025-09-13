@@ -196,8 +196,8 @@
             this.txtGender.ForeColor = System.Drawing.Color.Black;
             this.txtGender.ItemHeight = 30;
             this.txtGender.Items.AddRange(new object[] {
-            "Nam ",
-            "Nữ "});
+            "Nam",
+            "Nu"});
             this.txtGender.Location = new System.Drawing.Point(310, 343);
             this.txtGender.Name = "txtGender";
             this.txtGender.Size = new System.Drawing.Size(247, 36);
@@ -522,6 +522,7 @@
             this.btnXoaKhachHang.Size = new System.Drawing.Size(140, 45);
             this.btnXoaKhachHang.TabIndex = 44;
             this.btnXoaKhachHang.Text = "Xóa";
+            this.btnXoaKhachHang.Click += new System.EventHandler(this.btnXoaKhachHang_Click);
             // 
             // btnSuaKhachHang
             // 

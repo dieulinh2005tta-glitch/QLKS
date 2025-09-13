@@ -164,6 +164,48 @@ namespace QLKS1.All_User_Control
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin cần thiết (Tên, SĐT, CMND/CCCD).", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void btnXoaKhachHang_Click(object sender, EventArgs e)
+        {
+            if (txtIDProof.Text != "")
+            {
+              
+                DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa khách hàng này không? Thao tác này sẽ làm trống phòng của họ.", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (result == DialogResult.Yes)
+                {
+                    String idproof = txtIDProof.Text;
+
+                    
+                    string getRoomNoQuery = "SELECT roomid FROM customer WHERE idproof = '" + idproof + "'";
+                    DataSet dsRoomId = fn.GetData(getRoomNoQuery);
+
+                    if (dsRoomId.Tables[0].Rows.Count > 0)
+                    {
+                        int roomid = int.Parse(dsRoomId.Tables[0].Rows[0][0].ToString());
+
+                        
+                        string updateRoomQuery = "UPDATE rooms SET booked = 'No' WHERE roomid = " + roomid;
+                        fn.setData(updateRoomQuery, ""); 
+
+                       
+                        string deleteCustomerQuery = "DELETE FROM customer WHERE idproof = '" + idproof + "'";
+                        fn.setData(deleteCustomerQuery, "Khách hàng đã được xóa và phòng đã được làm trống.");
+
+                        clearAll();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không tìm thấy khách hàng để xóa.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng điền CMND/CCCD của khách hàng cần xóa.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
     }
+    
 

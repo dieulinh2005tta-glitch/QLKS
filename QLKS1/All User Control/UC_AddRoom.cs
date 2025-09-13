@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClosedXML.Excel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -152,7 +153,95 @@ namespace QLKS1.All_User_Control
                 MessageBox.Show("Vui lòng chọn phòng cần xóa.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void btnExel_Click(object sender, EventArgs e)
+        {
+            if (DataGridView1.Rows.Count > 0)
+            {
+               
+                SaveFileDialog sfd = new SaveFileDialog();
+                sfd.Filter = "Excel Workbook (*.xlsx)|*.xlsx";
+                sfd.FileName = "DanhSachPhong_" + DateTime.Now.ToString("dd-MM-yyyy_HH-mm-ss") + ".xlsx";
+
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        
+                        using (XLWorkbook wb = new XLWorkbook())
+                        {
+                            
+                            var ws = wb.Worksheets.Add("Danh sách phòng");
+
+                           
+                            for (int i = 0; i < DataGridView1.Columns.Count; i++)
+                            {
+                                ws.Cell(1, i + 1).Value = DataGridView1.Columns[i].HeaderText;
+                            }
+
+                            for (int i = 0; i < DataGridView1.Rows.Count; i++)
+                            {
+                             
+                                if (DataGridView1.Rows[i].IsNewRow) continue;
+
+                                for (int j = 0; j < DataGridView1.Columns.Count; j++)
+                                {
+                                    ws.Cell(i + 2, j + 1).Value = DataGridView1.Rows[i].Cells[j].Value?.ToString() ?? "";
+                                }
+                            }
+                            
+                            var titleRange = ws.Range(1, 1, 1, DataGridView1.Columns.Count);
+                            titleRange.Merge();
+
+                            ws.Cell(1, 1).Value = "Danh Sách Phòng";
+                            ws.Cell(1, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+                            ws.Cell(1, 1).Style.Font.Bold = true;
+                            ws.Cell(1, 1).Style.Font.FontSize = 16;
+                            for (int i = 0; i < DataGridView1.Columns.Count; i++)
+                            {
+                                ws.Cell(2, i + 1).Value = DataGridView1.Columns[i].HeaderText;
+                            }
+
+                            
+                            for (int i = 0; i < DataGridView1.Rows.Count; i++)
+                            {
+                                if (DataGridView1.Rows[i].IsNewRow) continue;
+
+                                for (int j = 0; j < DataGridView1.Columns.Count; j++)
+                                {
+                                
+                                    ws.Cell(i + 3, j + 1).Value = DataGridView1.Rows[i].Cells[j].Value?.ToString() ?? "";
+                                }
+                            }
+
+
+                            var rangeWithData = ws.Range(1, 1, DataGridView1.Rows.Count + 1, DataGridView1.Columns.Count);
+                            rangeWithData.Style.Border.TopBorder = XLBorderStyleValues.Thin;
+                            rangeWithData.Style.Border.BottomBorder = XLBorderStyleValues.Thin;
+                            rangeWithData.Style.Border.LeftBorder = XLBorderStyleValues.Thin;
+                            rangeWithData.Style.Border.RightBorder = XLBorderStyleValues.Thin;
+                            rangeWithData.Style.Border.InsideBorder = XLBorderStyleValues.Thin;
+
+                            ws.Columns().AdjustToContents();
+
+                            wb.SaveAs(sfd.FileName);
+
+                            MessageBox.Show("Dữ liệu đã được xuất ra Excel thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Có lỗi xảy ra khi xuất file Excel: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Không có dữ liệu để xuất.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
     }
+    
 
 

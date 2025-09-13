@@ -24,7 +24,7 @@ namespace QLKS1
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text == "DieuLinh" && txtPassword.Text == "123")
+            if (txtUsername.Text == "Admin" && txtPassword.Text == "123")
             {
                 labelError.Visible = false;
                 Dashboard ds = new Dashboard();

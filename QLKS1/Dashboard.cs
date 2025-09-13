@@ -27,6 +27,7 @@ namespace QLKS1
         {
             uC_AddRoom1.Visible = false;
             uC_CustomerRes1.Visible = false;
+            uC_ChẹckOut1.Visible = false;
             btnAddRoom.PerformClick();
         }
 
@@ -44,6 +45,17 @@ namespace QLKS1
             PanelMoving.Left= btnCustomerRes.Left + 50;
             uC_CustomerRes1.Visible = true;
             uC_CustomerRes1.BringToFront();
+        }
+
+        private void btnCheckOut_Click(object sender, EventArgs e)
+        {
+            PanelMoving.Left=btnCheckOut.Left + 50;
+            uC_ChẹckOut1.Visible = true;
+            uC_ChẹckOut1.BringToFront();
+
+
+
+
         }
     }
 }
