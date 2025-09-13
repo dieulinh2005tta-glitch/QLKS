@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.uC_Employee1 = new QLKS1.All_User_Control.UC_Employee();
+            this.uC_CustomerDetails1 = new QLKS1.All_User_Control.UC_CustomerDetails();
             this.uC_ChẹckOut1 = new QLKS1.All_User_Control.UC_CheckOut();
             this.uC_CustomerRes1 = new QLKS1.All_User_Control.UC_CustomerRes();
             this.uC_AddRoom1 = new QLKS1.All_User_Control.UC_AddRoom();
@@ -44,6 +46,10 @@
             this.PanelMoving = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -68,6 +74,8 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.uC_Employee1);
+            this.panel1.Controls.Add(this.uC_CustomerDetails1);
             this.panel1.Controls.Add(this.uC_ChẹckOut1);
             this.panel1.Controls.Add(this.uC_CustomerRes1);
             this.panel1.Controls.Add(this.uC_AddRoom1);
@@ -75,6 +83,23 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1882, 852);
             this.panel1.TabIndex = 3;
+            // 
+            // uC_Employee1
+            // 
+            this.uC_Employee1.BackColor = System.Drawing.Color.White;
+            this.uC_Employee1.Location = new System.Drawing.Point(-1, -1);
+            this.uC_Employee1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uC_Employee1.Name = "uC_Employee1";
+            this.uC_Employee1.Size = new System.Drawing.Size(1882, 849);
+            this.uC_Employee1.TabIndex = 4;
+            // 
+            // uC_CustomerDetails1
+            // 
+            this.uC_CustomerDetails1.BackColor = System.Drawing.Color.White;
+            this.uC_CustomerDetails1.Location = new System.Drawing.Point(-1, -1);
+            this.uC_CustomerDetails1.Name = "uC_CustomerDetails1";
+            this.uC_CustomerDetails1.Size = new System.Drawing.Size(1882, 852);
+            this.uC_CustomerDetails1.TabIndex = 3;
             // 
             // uC_ChẹckOut1
             // 
@@ -128,6 +153,7 @@
             this.btnEmployee.Size = new System.Drawing.Size(284, 116);
             this.btnEmployee.TabIndex = 4;
             this.btnEmployee.Text = "Nhân Viên";
+            this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click);
             // 
             // btnCustomerDetail
             // 
@@ -144,6 +170,7 @@
             this.btnCustomerDetail.Size = new System.Drawing.Size(284, 116);
             this.btnCustomerDetail.TabIndex = 3;
             this.btnCustomerDetail.Text = "Chi Tiết Khách Hàng";
+            this.btnCustomerDetail.Click += new System.EventHandler(this.btnCustomerDetail_Click);
             // 
             // btnCheckOut
             // 
@@ -212,6 +239,14 @@
             // 
             this.guna2Elipse2.TargetControl = this;
             // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.TargetControl = this;
+            // 
+            // guna2Elipse6
+            // 
+            this.guna2Elipse6.TargetControl = this;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -250,5 +285,11 @@
         private All_User_Control.UC_CustomerRes uC_CustomerRes1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private All_User_Control.UC_CheckOut uC_ChẹckOut1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
+        private All_User_Control.UC_CustomerDetails uC_CustomerDetails1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
+        private All_User_Control.UC_Employee uC_Employee1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse6;
     }
 }

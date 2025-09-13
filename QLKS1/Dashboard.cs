@@ -28,6 +28,8 @@ namespace QLKS1
             uC_AddRoom1.Visible = false;
             uC_CustomerRes1.Visible = false;
             uC_ChẹckOut1.Visible = false;
+            uC_CustomerDetails1.Visible = false;
+            uC_Employee1.Visible = false;
             btnAddRoom.PerformClick();
         }
 
@@ -56,6 +58,20 @@ namespace QLKS1
 
 
 
+        }
+
+        private void btnCustomerDetail_Click(object sender, EventArgs e)
+        {
+            PanelMoving.Left = btnCustomerDetail.Left + 50;
+            uC_CustomerDetails1.Visible = true;
+            uC_CustomerDetails1.BringToFront();
+        }
+
+        private void btnEmployee_Click(object sender, EventArgs e)
+        {
+            PanelMoving.Left = btnEmployee.Left + 50;
+            uC_Employee1.Visible = true;
+            uC_Employee1.BringToFront();
         }
     }
 }

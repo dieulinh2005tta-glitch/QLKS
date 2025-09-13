@@ -39,3 +39,5 @@ D:\XDPMQLKS\QLKS1\QLKS1\bin\Debug\System.Buffers.xml
 D:\XDPMQLKS\QLKS1\QLKS1\bin\Debug\System.Memory.xml
 D:\XDPMQLKS\QLKS1\QLKS1\bin\Debug\System.Numerics.Vectors.xml
 D:\XDPMQLKS\QLKS1\QLKS1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\XDPMQLKS\QLKS1\QLKS1\obj\Debug\QLKS1.All_User_Control.UC_CustomerDetails.resources
+D:\XDPMQLKS\QLKS1\QLKS1\obj\Debug\QLKS1.All_User_Control.UC_Employee.resources

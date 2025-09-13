@@ -3,27 +3,59 @@
   "WorkspaceRootPath": "D:\\XDPMQLKS\\QLKS1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|D:\\XDPMQLKS\\QLKS1\\qlks1\\all user control\\uc_addroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|solutionrelative:qlks1\\all user control\\uc_addroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|d:\\xdpmqlks\\qlks1\\qlks1\\all user control\\uc_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|solutionrelative:qlks1\\all user control\\uc_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|D:\\XDPMQLKS\\QLKS1\\qlks1\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|solutionrelative:qlks1\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|d:\\xdpmqlks\\qlks1\\qlks1\\all user control\\uc_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|solutionrelative:qlks1\\all user control\\uc_employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|D:\\XDPMQLKS\\QLKS1\\qlks1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|solutionrelative:qlks1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|D:\\XDPMQLKS\\QLKS1\\qlks1\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|solutionrelative:qlks1\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|d:\\xdpmqlks\\qlks1\\qlks1\\all user control\\uc_customerdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|solutionrelative:qlks1\\all user control\\uc_customerdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|D:\\XDPMQLKS\\QLKS1\\qlks1\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|solutionrelative:qlks1\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|d:\\xdpmqlks\\qlks1\\qlks1\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|D:\\XDPMQLKS\\QLKS1\\qlks1\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|solutionrelative:qlks1\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|d:\\xdpmqlks\\qlks1\\qlks1\\all user control\\uc_employee.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|solutionrelative:qlks1\\all user control\\uc_employee.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|d:\\xdpmqlks\\qlks1\\qlks1\\all user control\\uc_customerdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|solutionrelative:qlks1\\all user control\\uc_customerdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|D:\\XDPMQLKS\\QLKS1\\qlks1\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|solutionrelative:qlks1\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|D:\\XDPMQLKS\\QLKS1\\qlks1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|solutionrelative:qlks1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|D:\\XDPMQLKS\\QLKS1\\qlks1\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|solutionrelative:qlks1\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|D:\\XDPMQLKS\\QLKS1\\qlks1\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|solutionrelative:qlks1\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|D:\\XDPMQLKS\\QLKS1\\qlks1\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|solutionrelative:qlks1\\all user control\\uc_customerres.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|D:\\XDPMQLKS\\QLKS1\\qlks1\\all user control\\uc_addroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|solutionrelative:qlks1\\all user control\\uc_addroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|D:\\XDPMQLKS\\QLKS1\\qlks1\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|solutionrelative:qlks1\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -33,18 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|D:\\XDPMQLKS\\QLKS1\\qlks1\\all user control\\uc_addroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|solutionrelative:qlks1\\all user control\\uc_addroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|d:\\xdpmqlks\\qlks1\\qlks1\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|solutionrelative:qlks1\\all user control\\uc_checkout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|D:\\XDPMQLKS\\QLKS1\\qlks1\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|solutionrelative:qlks1\\function.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|D:\\XDPMQLKS\\QLKS1\\qlks1\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|solutionrelative:qlks1\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2AD1F1D8-B2EE-439E-96D4-96FCB3EE3171}|QLKS1\\QLKS1.csproj|D:\\XDPMQLKS\\QLKS1\\qlks1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,11 +86,40 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "UC_Employee.cs [Design]",
+              "DocumentMoniker": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_Employee.cs",
+              "RelativeDocumentMoniker": "QLKS1\\All User Control\\UC_Employee.cs",
+              "ToolTip": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_Employee.cs [Design]",
+              "RelativeToolTip": "QLKS1\\All User Control\\UC_Employee.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T14:00:13.271Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UC_Employee.cs",
+              "DocumentMoniker": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_Employee.cs",
+              "RelativeDocumentMoniker": "QLKS1\\All User Control\\UC_Employee.cs",
+              "ToolTip": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_Employee.cs",
+              "RelativeToolTip": "QLKS1\\All User Control\\UC_Employee.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAIA/wGkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T14:09:33.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Dashboard.cs [Design]",
               "DocumentMoniker": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\Dashboard.cs",
               "RelativeDocumentMoniker": "QLKS1\\Dashboard.cs",
@@ -82,19 +131,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UC_CustomerRes.cs [Design]",
-              "DocumentMoniker": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_CustomerRes.cs",
-              "RelativeDocumentMoniker": "QLKS1\\All User Control\\UC_CustomerRes.cs",
-              "ToolTip": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_CustomerRes.cs [Design]",
-              "RelativeToolTip": "QLKS1\\All User Control\\UC_CustomerRes.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "UC_CustomerDetails.cs [Design]",
+              "DocumentMoniker": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_CustomerDetails.cs",
+              "RelativeDocumentMoniker": "QLKS1\\All User Control\\UC_CustomerDetails.cs",
+              "ToolTip": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_CustomerDetails.cs [Design]",
+              "RelativeToolTip": "QLKS1\\All User Control\\UC_CustomerDetails.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T16:58:07.723Z",
+              "WhenOpened": "2025-09-13T12:46:11.529Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "Dashboard.cs",
+              "DocumentMoniker": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\Dashboard.cs",
+              "RelativeDocumentMoniker": "QLKS1\\Dashboard.cs",
+              "ToolTip": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\Dashboard.cs",
+              "RelativeToolTip": "QLKS1\\Dashboard.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAtwCAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T12:40:32.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UC_Employee.Designer.cs",
+              "DocumentMoniker": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_Employee.Designer.cs",
+              "RelativeDocumentMoniker": "QLKS1\\All User Control\\UC_Employee.Designer.cs",
+              "ToolTip": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_Employee.Designer.cs",
+              "RelativeToolTip": "QLKS1\\All User Control\\UC_Employee.Designer.cs",
+              "ViewState": "AgIAAFEBAAAAAAAAAAAjwGABAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T14:26:10.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UC_CustomerDetails.cs",
+              "DocumentMoniker": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_CustomerDetails.cs",
+              "RelativeDocumentMoniker": "QLKS1\\All User Control\\UC_CustomerDetails.cs",
+              "ToolTip": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_CustomerDetails.cs",
+              "RelativeToolTip": "QLKS1\\All User Control\\UC_CustomerDetails.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAACYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T13:21:05.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\Form1.cs",
               "RelativeDocumentMoniker": "QLKS1\\Form1.cs",
@@ -106,32 +194,69 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "UC_CustomerRes.cs",
               "DocumentMoniker": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_CustomerRes.cs",
               "RelativeDocumentMoniker": "QLKS1\\All User Control\\UC_CustomerRes.cs",
               "ToolTip": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_CustomerRes.cs",
               "RelativeToolTip": "QLKS1\\All User Control\\UC_CustomerRes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHgAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAIwHgAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-08T07:58:35.517Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
+              "Title": "UC_CheckOut.cs",
+              "DocumentMoniker": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_CheckOut.cs",
+              "RelativeDocumentMoniker": "QLKS1\\All User Control\\UC_CheckOut.cs",
+              "ToolTip": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_CheckOut.cs",
+              "RelativeToolTip": "QLKS1\\All User Control\\UC_CheckOut.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T16:26:23.009Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "function.cs",
+              "DocumentMoniker": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\function.cs",
+              "RelativeDocumentMoniker": "QLKS1\\function.cs",
+              "ToolTip": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\function.cs",
+              "RelativeToolTip": "QLKS1\\function.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABEAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T13:37:36.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UC_CustomerRes.cs [Design]",
+              "DocumentMoniker": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_CustomerRes.cs",
+              "RelativeDocumentMoniker": "QLKS1\\All User Control\\UC_CustomerRes.cs",
+              "ToolTip": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_CustomerRes.cs [Design]",
+              "RelativeToolTip": "QLKS1\\All User Control\\UC_CustomerRes.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-06T16:58:07.723Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "UC_AddRoom.cs [Design]",
               "DocumentMoniker": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_AddRoom.cs",
               "RelativeDocumentMoniker": "QLKS1\\All User Control\\UC_AddRoom.cs",
               "ToolTip": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_AddRoom.cs [Design]",
               "RelativeToolTip": "QLKS1\\All User Control\\UC_AddRoom.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T13:04:31.266Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-09-06T13:04:31.266Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "UC_CheckOut.cs [Design]",
               "DocumentMoniker": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_CheckOut.cs",
               "RelativeDocumentMoniker": "QLKS1\\All User Control\\UC_CheckOut.cs",
@@ -143,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\Form1.cs",
               "RelativeDocumentMoniker": "QLKS1\\Form1.cs",
@@ -155,12 +280,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "UC_AddRoom.cs",
               "DocumentMoniker": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_AddRoom.cs",
               "RelativeDocumentMoniker": "QLKS1\\All User Control\\UC_AddRoom.cs",
@@ -168,51 +289,11 @@
               "RelativeToolTip": "QLKS1\\All User Control\\UC_AddRoom.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAIwE4AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T14:49:03.233Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-06T14:49:03.233Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UC_CheckOut.cs",
-              "DocumentMoniker": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_CheckOut.cs",
-              "RelativeDocumentMoniker": "QLKS1\\All User Control\\UC_CheckOut.cs",
-              "ToolTip": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_CheckOut.cs",
-              "RelativeToolTip": "QLKS1\\All User Control\\UC_CheckOut.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAiwFYAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-08T16:26:23.009Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "function.cs",
-              "DocumentMoniker": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\function.cs",
-              "RelativeDocumentMoniker": "QLKS1\\function.cs",
-              "ToolTip": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\function.cs",
-              "RelativeToolTip": "QLKS1\\function.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T13:37:36.988Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Dashboard.cs",
-              "DocumentMoniker": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\Dashboard.cs",
-              "RelativeDocumentMoniker": "QLKS1\\Dashboard.cs",
-              "ToolTip": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\Dashboard.cs",
-              "RelativeToolTip": "QLKS1\\Dashboard.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAqwB0AAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-06T12:40:32.975Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\Program.cs",
               "RelativeDocumentMoniker": "QLKS1\\Program.cs",
@@ -224,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "QLKS1\\Form1.Designer.cs",
@@ -237,7 +318,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "UC_CustomerRes.Designer.cs",
               "DocumentMoniker": "D:\\XDPMQLKS\\QLKS1\\QLKS1\\All User Control\\UC_CustomerRes.Designer.cs",
               "RelativeDocumentMoniker": "QLKS1\\All User Control\\UC_CustomerRes.Designer.cs",
