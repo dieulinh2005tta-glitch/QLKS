@@ -67,6 +67,14 @@
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtRentalType = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtCheckInTime = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.txtCheckOutTime = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtTotalHours = new System.Windows.Forms.Label();
+            this.btnCalculateHours = new Guna.UI2.WinForms.Guna2Button();
             this.SuspendLayout();
             // 
             // label1
@@ -557,10 +565,122 @@
             this.guna2Elipse3.BorderRadius = 30;
             this.guna2Elipse3.TargetControl = this;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(122, 572);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(134, 25);
+            this.label4.TabIndex = 46;
+            this.label4.Text = "Loại hình thuê";
+            // 
+            // txtRentalType
+            // 
+            this.txtRentalType.BackColor = System.Drawing.Color.Transparent;
+            this.txtRentalType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtRentalType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtRentalType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRentalType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtRentalType.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtRentalType.ForeColor = System.Drawing.Color.Black;
+            this.txtRentalType.ItemHeight = 30;
+            this.txtRentalType.Items.AddRange(new object[] {
+            "Đăng kí theo ngày ",
+            "Đăng kí theo giờ "});
+            this.txtRentalType.Location = new System.Drawing.Point(310, 561);
+            this.txtRentalType.Name = "txtRentalType";
+            this.txtRentalType.Size = new System.Drawing.Size(247, 36);
+            this.txtRentalType.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtRentalType.TabIndex = 47;
+            this.txtRentalType.SelectedIndexChanged += new System.EventHandler(this.txtRentalType_SelectedIndexChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(123, 677);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(170, 25);
+            this.label7.TabIndex = 48;
+            this.label7.Text = "Thời gian Checkin";
+            this.label7.Click += new System.EventHandler(this.label7_Click_1);
+            // 
+            // txtCheckInTime
+            // 
+            this.txtCheckInTime.Checked = true;
+            this.txtCheckInTime.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCheckInTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.txtCheckInTime.Location = new System.Drawing.Point(310, 666);
+            this.txtCheckInTime.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.txtCheckInTime.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.txtCheckInTime.Name = "txtCheckInTime";
+            this.txtCheckInTime.ShowUpDown = true;
+            this.txtCheckInTime.Size = new System.Drawing.Size(200, 36);
+            this.txtCheckInTime.TabIndex = 49;
+            this.txtCheckInTime.Value = new System.DateTime(2025, 9, 14, 23, 37, 11, 738);
+            // 
+            // txtCheckOutTime
+            // 
+            this.txtCheckOutTime.Checked = true;
+            this.txtCheckOutTime.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCheckOutTime.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.txtCheckOutTime.Location = new System.Drawing.Point(310, 734);
+            this.txtCheckOutTime.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.txtCheckOutTime.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.txtCheckOutTime.Name = "txtCheckOutTime";
+            this.txtCheckOutTime.ShowUpDown = true;
+            this.txtCheckOutTime.Size = new System.Drawing.Size(200, 36);
+            this.txtCheckOutTime.TabIndex = 51;
+            this.txtCheckOutTime.Value = new System.DateTime(2025, 9, 14, 23, 37, 11, 738);
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(123, 745);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(187, 25);
+            this.label22.TabIndex = 50;
+            this.label22.Text = "Thời gian CheckOut";
+            // 
+            // txtTotalHours
+            // 
+            this.txtTotalHours.AutoSize = true;
+            this.txtTotalHours.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalHours.Location = new System.Drawing.Point(599, 677);
+            this.txtTotalHours.Name = "txtTotalHours";
+            this.txtTotalHours.Size = new System.Drawing.Size(115, 25);
+            this.txtTotalHours.TabIndex = 52;
+            this.txtTotalHours.Text = "Tổng số giờ";
+            // 
+            // btnCalculateHours
+            // 
+            this.btnCalculateHours.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCalculateHours.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCalculateHours.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCalculateHours.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCalculateHours.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCalculateHours.ForeColor = System.Drawing.Color.White;
+            this.btnCalculateHours.Location = new System.Drawing.Point(733, 666);
+            this.btnCalculateHours.Name = "btnCalculateHours";
+            this.btnCalculateHours.Size = new System.Drawing.Size(180, 36);
+            this.btnCalculateHours.TabIndex = 53;
+            this.btnCalculateHours.Text = "Tính giờ";
+            this.btnCalculateHours.Click += new System.EventHandler(this.btnCalculateHours_Click);
+            // 
             // UC_CustomerRes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnCalculateHours);
+            this.Controls.Add(this.txtTotalHours);
+            this.Controls.Add(this.txtCheckOutTime);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.txtCheckInTime);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txtRentalType);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.btnSuaKhachHang);
             this.Controls.Add(this.btnXoaKhachHang);
             this.Controls.Add(this.txtPrice);
@@ -644,5 +764,13 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2ComboBox txtRentalType;
+        private System.Windows.Forms.Label label7;
+        private Guna.UI2.WinForms.Guna2DateTimePicker txtCheckInTime;
+        private System.Windows.Forms.Label txtTotalHours;
+        private Guna.UI2.WinForms.Guna2DateTimePicker txtCheckOutTime;
+        private System.Windows.Forms.Label label22;
+        private Guna.UI2.WinForms.Guna2Button btnCalculateHours;
     }
 }

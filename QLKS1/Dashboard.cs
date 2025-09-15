@@ -54,6 +54,7 @@ namespace QLKS1
             PanelMoving.Left=btnCheckOut.Left + 50;
             uC_ChẹckOut1.Visible = true;
             uC_ChẹckOut1.BringToFront();
+            
 
 
 

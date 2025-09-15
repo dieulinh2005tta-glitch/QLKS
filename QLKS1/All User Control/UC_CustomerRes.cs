@@ -89,7 +89,7 @@ namespace QLKS1.All_User_Control
         {
             if (txtName.Text != "" && txtContact.Text != " " && txtNationality.Text != " " && txtGender.Text != " " && txtDob.Text != " " && txtIDProof.Text != " " && txtAddress.Text != " " && txtCheckin.Text != " " && txtPrice.Text!= " ") 
 
-            {
+            {                                                                                                                                                                                                               
                 string Name =txtName.Text;
                 Int64 mobile= Int64.Parse(txtContact.Text);
                 string national =txtNationality.Text;
@@ -99,8 +99,26 @@ namespace QLKS1.All_User_Control
                 string address = txtAddress.Text;
                 string checkin = txtCheckin.Text;
 
+                DateTime checkinTime = DateTime.Now;
+                DateTime? checkoutDateTime = null;
+                bool isHourly = (txtRentalType.Text == "Theo Giờ");
 
-                query = "Insert into customer (cname ,mobile,nationality,gender, dob,idproof,address, checkin, roomid) values('" + Name + "','" + mobile + "','" + national + "','" + gender + "','"+dob+"','" + idproof + "','" + address + "','" + checkin + "'," + rid + ") update rooms set booked ='YES' where roomNo='" + txtRoomNo.Text + "'";
+                if (isHourly)
+                {
+
+                    checkinTime = txtCheckInTime.Value;
+
+                
+                }
+                else
+                {
+
+                    checkoutDateTime = DateTime.Parse(txtCheckin.Text);
+                }
+
+
+                query = "Insert into customer (cname ,mobile,nationality,gender, dob,idproof,address, checkin, roomid, is_hourly, checkin_time) values('" + Name + "','" + mobile + "','" + national + "','" + gender + "','"+dob+"','" + idproof + "','" + address + "','" + checkin + "'," + rid + ","+(isHourly ? 1:0)+ ", '" + checkinTime.ToString("yyyy-MM-dd HH:mm:ss") + "'); " +
+                    "update rooms set booked ='YES' where roomNo='" + txtRoomNo.Text + "'";
                 fn.setData(query,"Số Phòng"+txtRoomNo.Text+"Đăng ký khách hàng thành công.");
                 clearAll();
 
@@ -205,7 +223,51 @@ namespace QLKS1.All_User_Control
                 MessageBox.Show("Vui lòng điền CMND/CCCD của khách hàng cần xóa.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        private void label7_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtRentalType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (txtRentalType.Text == "Theo Giờ")
+            {
+                txtCheckInTime.Visible = true;
+                txtCheckOutTime.Visible = true;
+                btnCalculateHours.Visible = true;
+                txtTotalHours.Visible = true;
+            }
+            else
+            {
+                txtCheckInTime.Visible = false;
+                txtCheckOutTime.Visible = false;
+                btnCalculateHours.Visible = false;
+                txtTotalHours.Visible = false;
+            }
+        }
+
+        private void btnCalculateHours_Click(object sender, EventArgs e)
+        {
+            DateTime checkIn = txtCheckInTime.Value;
+            DateTime checkOut = txtCheckOutTime.Value;
+
+           
+            if (checkOut < checkIn)
+            {
+                MessageBox.Show("Thời gian trả phòng không thể sớm hơn thời gian nhận phòng.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+           
+            TimeSpan duration = checkOut - checkIn;
+            double totalHours = Math.Ceiling(duration.TotalHours);
+
+          
+            txtTotalHours.Text = "Tổng số giờ: " + totalHours.ToString();
+        }
     }
     }
+    
     
 
