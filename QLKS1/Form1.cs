@@ -38,5 +38,7 @@ namespace QLKS1
                 txtPassword.Clear();
             }
         }
+
+  
     }
 }

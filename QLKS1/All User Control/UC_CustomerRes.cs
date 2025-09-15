@@ -99,26 +99,31 @@ namespace QLKS1.All_User_Control
                 string address = txtAddress.Text;
                 string checkin = txtCheckin.Text;
 
-                DateTime checkinTime = DateTime.Now;
-                DateTime? checkoutDateTime = null;
+                string expectedCheckout = txtCheckOutDate.Text;
+         //       DateTime checkinTime = DateTime.Now;
+          //      DateTime? checkoutDateTime = null;
                 bool isHourly = (txtRentalType.Text == "Theo Giờ");
 
-                if (isHourly)
-                {
+                /*    if (isHourly)
+                     {
 
-                    checkinTime = txtCheckInTime.Value;
-
-                
-                }
-                else
-                {
-
-                    checkoutDateTime = DateTime.Parse(txtCheckin.Text);
-                }
+                      checkinTime = txtCheckInTime.Value;
 
 
-                query = "Insert into customer (cname ,mobile,nationality,gender, dob,idproof,address, checkin, roomid, is_hourly, checkin_time) values('" + Name + "','" + mobile + "','" + national + "','" + gender + "','"+dob+"','" + idproof + "','" + address + "','" + checkin + "'," + rid + ","+(isHourly ? 1:0)+ ", '" + checkinTime.ToString("yyyy-MM-dd HH:mm:ss") + "'); " +
-                    "update rooms set booked ='YES' where roomNo='" + txtRoomNo.Text + "'";
+                     }
+                     else
+                     {
+
+                         checkoutDateTime = DateTime.Parse(txtCheckin.Text);
+                     }
+
+
+                     query = "Insert into customer (cname ,mobile,nationality,gender, dob,idproof,address, checkin, roomid, is_hourly, checkin_time) values('" + Name + "','" + mobile + "','" + national + "','" + gender + "','"+dob+"','" + idproof + "','" + address + "','" + checkin + "','"+expectedCheckout+"" + rid + ","+(isHourly ? 1:0)+ ", '" + checkinTime.ToString("yyyy-MM-dd HH:mm:ss") + "'); " +
+                         "update rooms set booked ='YES' where roomNo='" + txtRoomNo.Text + "'";
+                    */
+                query = "INSERT INTO customer (cname, mobile, nationality, gender, dob, idproof, address, checkin, checkout, roomid, is_hourly) " +
+                     "VALUES('" + Name + "', '" + mobile + "', '" + national + "', '" + gender + "', '" + dob + "','" + idproof + "','" + address + "','" + checkin + "','" + expectedCheckout + "', " + rid + ", " + (isHourly ? 1 : 0) + "); " +
+                     "UPDATE rooms SET booked ='YES' WHERE roomNo='" + txtRoomNo.Text + "'";
                 fn.setData(query,"Số Phòng"+txtRoomNo.Text+"Đăng ký khách hàng thành công.");
                 clearAll();
 
@@ -157,72 +162,72 @@ namespace QLKS1.All_User_Control
 
         }
 
-        private void btnSuaKhachHang_Click(object sender, EventArgs e)
-        {
-            if (txtName.Text != "" && txtContact.Text != "" && txtIDProof.Text != "")
-            {
-                string Name = txtName.Text;
-                Int64 mobile = Int64.Parse(txtContact.Text);
-                string national = txtNationality.Text;
-                string gender = txtGender.Text;
-                string dob = txtDob.Text;
-                string idproof = txtIDProof.Text;
-                string address = txtAddress.Text;
-                string checkin = txtCheckin.Text;
+        /*   private void btnSuaKhachHang_Click(object sender, EventArgs e)
+           {
+               if (txtName.Text != "" && txtContact.Text != "" && txtIDProof.Text != "")
+               {
+                   string Name = txtName.Text;
+                   Int64 mobile = Int64.Parse(txtContact.Text);
+                   string national = txtNationality.Text;
+                   string gender = txtGender.Text;
+                   string dob = txtDob.Text;
+                   string idproof = txtIDProof.Text;
+                   string address = txtAddress.Text;
+                   string checkin = txtCheckin.Text;
 
-              
-                query = "UPDATE customer SET cname = '" + Name + "', mobile = '" + mobile + "', nationality = '" + national + "', gender = '" + gender + "', dob = '" + dob + "', address = '" + address + "', checkin = '" + checkin + "' WHERE idproof = '" + idproof + "'";
 
-              
-                fn.setData(query, "Thông tin khách hàng đã được cập nhật thành công.");
-                clearAll();
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin cần thiết (Tên, SĐT, CMND/CCCD).", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
+                   query = "UPDATE customer SET cname = '" + Name + "', mobile = '" + mobile + "', nationality = '" + national + "', gender = '" + gender + "', dob = '" + dob + "', address = '" + address + "', checkin = '" + checkin + "' WHERE idproof = '" + idproof + "'";
 
-        private void btnXoaKhachHang_Click(object sender, EventArgs e)
-        {
-            if (txtIDProof.Text != "")
-            {
-              
-                DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa khách hàng này không? Thao tác này sẽ làm trống phòng của họ.", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-                if (result == DialogResult.Yes)
-                {
-                    String idproof = txtIDProof.Text;
+                   fn.setData(query, "Thông tin khách hàng đã được cập nhật thành công.");
+                   clearAll();
+               }
+               else
+               {
+                   MessageBox.Show("Vui lòng nhập đầy đủ thông tin cần thiết (Tên, SĐT, CMND/CCCD).", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+               }
+           }
 
-                    
-                    string getRoomNoQuery = "SELECT roomid FROM customer WHERE idproof = '" + idproof + "'";
-                    DataSet dsRoomId = fn.GetData(getRoomNoQuery);
+           private void btnXoaKhachHang_Click(object sender, EventArgs e)
+           {
+               if (txtIDProof.Text != "")
+               {
 
-                    if (dsRoomId.Tables[0].Rows.Count > 0)
-                    {
-                        int roomid = int.Parse(dsRoomId.Tables[0].Rows[0][0].ToString());
+                   DialogResult result = MessageBox.Show("Bạn có chắc chắn muốn xóa khách hàng này không? Thao tác này sẽ làm trống phòng của họ.", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
-                        
-                        string updateRoomQuery = "UPDATE rooms SET booked = 'No' WHERE roomid = " + roomid;
-                        fn.setData(updateRoomQuery, ""); 
+                   if (result == DialogResult.Yes)
+                   {
+                       String idproof = txtIDProof.Text;
 
-                       
-                        string deleteCustomerQuery = "DELETE FROM customer WHERE idproof = '" + idproof + "'";
-                        fn.setData(deleteCustomerQuery, "Khách hàng đã được xóa và phòng đã được làm trống.");
 
-                        clearAll();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Không tìm thấy khách hàng để xóa.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }
-                }
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng điền CMND/CCCD của khách hàng cần xóa.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
+                       string getRoomNoQuery = "SELECT roomid FROM customer WHERE idproof = '" + idproof + "'";
+                       DataSet dsRoomId = fn.GetData(getRoomNoQuery);
+
+                       if (dsRoomId.Tables[0].Rows.Count > 0)
+                       {
+                           int roomid = int.Parse(dsRoomId.Tables[0].Rows[0][0].ToString());
+
+
+                           string updateRoomQuery = "UPDATE rooms SET booked = 'No' WHERE roomid = " + roomid;
+                           fn.setData(updateRoomQuery, ""); 
+
+
+                           string deleteCustomerQuery = "DELETE FROM customer WHERE idproof = '" + idproof + "'";
+                           fn.setData(deleteCustomerQuery, "Khách hàng đã được xóa và phòng đã được làm trống.");
+
+                           clearAll();
+                       }
+                       else
+                       {
+                           MessageBox.Show("Không tìm thấy khách hàng để xóa.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                       }
+                   }
+               }
+               else
+               {
+                   MessageBox.Show("Vui lòng điền CMND/CCCD của khách hàng cần xóa.", "Thông tin", MessageBoxButtons.OK, MessageBoxIcon.Information);
+               }
+           }*/
 
         private void label7_Click_1(object sender, EventArgs e)
         {

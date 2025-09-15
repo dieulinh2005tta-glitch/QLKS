@@ -75,6 +75,8 @@
             this.label22 = new System.Windows.Forms.Label();
             this.txtTotalHours = new System.Windows.Forms.Label();
             this.btnCalculateHours = new Guna.UI2.WinForms.Guna2Button();
+            this.txtCheckOutDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.label23 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -173,7 +175,7 @@
             this.txtNationality.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNationality.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtNationality.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtNationality.Location = new System.Drawing.Point(975, 211);
+            this.txtNationality.Location = new System.Drawing.Point(975, 315);
             this.txtNationality.Name = "txtNationality";
             this.txtNationality.PasswordChar = '\0';
             this.txtNationality.PlaceholderText = "Enter Nationality";
@@ -187,7 +189,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(824, 250);
+            this.label9.Location = new System.Drawing.Point(824, 354);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(103, 25);
             this.label9.TabIndex = 17;
@@ -230,7 +232,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(824, 354);
+            this.label10.Location = new System.Drawing.Point(824, 458);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(76, 25);
             this.label10.TabIndex = 22;
@@ -240,7 +242,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(814, 459);
+            this.label11.Location = new System.Drawing.Point(814, 563);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(0, 29);
             this.label11.TabIndex = 23;
@@ -269,7 +271,7 @@
             this.btnThemKhachHang.FillColor = System.Drawing.Color.Brown;
             this.btnThemKhachHang.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnThemKhachHang.ForeColor = System.Drawing.Color.Black;
-            this.btnThemKhachHang.Location = new System.Drawing.Point(1146, 572);
+            this.btnThemKhachHang.Location = new System.Drawing.Point(1158, 637);
             this.btnThemKhachHang.Name = "btnThemKhachHang";
             this.btnThemKhachHang.Size = new System.Drawing.Size(140, 45);
             this.btnThemKhachHang.TabIndex = 26;
@@ -311,7 +313,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(824, 460);
+            this.label13.Location = new System.Drawing.Point(824, 564);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(71, 25);
             this.label13.TabIndex = 29;
@@ -328,7 +330,7 @@
             this.txtIDProof.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtIDProof.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtIDProof.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtIDProof.Location = new System.Drawing.Point(975, 421);
+            this.txtIDProof.Location = new System.Drawing.Point(975, 525);
             this.txtIDProof.Name = "txtIDProof";
             this.txtIDProof.PasswordChar = '\0';
             this.txtIDProof.PlaceholderText = "Enter ID";
@@ -348,7 +350,7 @@
             this.txtAddress.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtAddress.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtAddress.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAddress.Location = new System.Drawing.Point(975, 315);
+            this.txtAddress.Location = new System.Drawing.Point(975, 419);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.PasswordChar = '\0';
             this.txtAddress.PlaceholderText = "Enter Address";
@@ -429,7 +431,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(789, 292);
+            this.label17.Location = new System.Drawing.Point(789, 396);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(0, 25);
             this.label17.TabIndex = 35;
@@ -525,12 +527,13 @@
             this.btnXoaKhachHang.FillColor = System.Drawing.Color.Brown;
             this.btnXoaKhachHang.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnXoaKhachHang.ForeColor = System.Drawing.Color.Black;
-            this.btnXoaKhachHang.Location = new System.Drawing.Point(1652, 572);
+            this.btnXoaKhachHang.Location = new System.Drawing.Point(1643, 637);
             this.btnXoaKhachHang.Name = "btnXoaKhachHang";
             this.btnXoaKhachHang.Size = new System.Drawing.Size(140, 45);
             this.btnXoaKhachHang.TabIndex = 44;
             this.btnXoaKhachHang.Text = "Xóa";
-            this.btnXoaKhachHang.Click += new System.EventHandler(this.btnXoaKhachHang_Click);
+            this.btnXoaKhachHang.Visible = false;
+//            this.btnXoaKhachHang.Click += new System.EventHandler(this.btnXoaKhachHang_Click);
             // 
             // btnSuaKhachHang
             // 
@@ -543,11 +546,12 @@
             this.btnSuaKhachHang.FillColor = System.Drawing.Color.Brown;
             this.btnSuaKhachHang.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnSuaKhachHang.ForeColor = System.Drawing.Color.Black;
-            this.btnSuaKhachHang.Location = new System.Drawing.Point(1404, 572);
+            this.btnSuaKhachHang.Location = new System.Drawing.Point(1395, 637);
             this.btnSuaKhachHang.Name = "btnSuaKhachHang";
             this.btnSuaKhachHang.Size = new System.Drawing.Size(140, 45);
             this.btnSuaKhachHang.TabIndex = 45;
             this.btnSuaKhachHang.Text = "Sửa ";
+            this.btnSuaKhachHang.Visible = false;
             this.btnSuaKhachHang.Click += new System.EventHandler(this.btnSuaKhachHang_Click);
             // 
             // guna2Elipse1
@@ -574,6 +578,7 @@
             this.label4.Size = new System.Drawing.Size(134, 25);
             this.label4.TabIndex = 46;
             this.label4.Text = "Loại hình thuê";
+            this.label4.Visible = false;
             // 
             // txtRentalType
             // 
@@ -593,6 +598,7 @@
             this.txtRentalType.Size = new System.Drawing.Size(247, 36);
             this.txtRentalType.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtRentalType.TabIndex = 47;
+            this.txtRentalType.Visible = false;
             this.txtRentalType.SelectedIndexChanged += new System.EventHandler(this.txtRentalType_SelectedIndexChanged);
             // 
             // label7
@@ -662,17 +668,42 @@
             this.btnCalculateHours.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnCalculateHours.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnCalculateHours.ForeColor = System.Drawing.Color.White;
-            this.btnCalculateHours.Location = new System.Drawing.Point(733, 666);
+            this.btnCalculateHours.Location = new System.Drawing.Point(769, 666);
             this.btnCalculateHours.Name = "btnCalculateHours";
             this.btnCalculateHours.Size = new System.Drawing.Size(180, 36);
             this.btnCalculateHours.TabIndex = 53;
             this.btnCalculateHours.Text = "Tính giờ";
             this.btnCalculateHours.Click += new System.EventHandler(this.btnCalculateHours_Click);
             // 
+            // txtCheckOutDate
+            // 
+            this.txtCheckOutDate.Checked = true;
+            this.txtCheckOutDate.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCheckOutDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtCheckOutDate.Location = new System.Drawing.Point(975, 239);
+            this.txtCheckOutDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.txtCheckOutDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.txtCheckOutDate.Name = "txtCheckOutDate";
+            this.txtCheckOutDate.Size = new System.Drawing.Size(247, 36);
+            this.txtCheckOutDate.TabIndex = 55;
+            this.txtCheckOutDate.Value = new System.DateTime(2025, 9, 8, 13, 54, 20, 283);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(824, 250);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(98, 25);
+            this.label23.TabIndex = 54;
+            this.label23.Text = "Ngày Trả ";
+            // 
             // UC_CustomerRes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtCheckOutDate);
+            this.Controls.Add(this.label23);
             this.Controls.Add(this.btnCalculateHours);
             this.Controls.Add(this.txtTotalHours);
             this.Controls.Add(this.txtCheckOutTime);
@@ -772,5 +803,7 @@
         private Guna.UI2.WinForms.Guna2DateTimePicker txtCheckOutTime;
         private System.Windows.Forms.Label label22;
         private Guna.UI2.WinForms.Guna2Button btnCalculateHours;
+        private Guna.UI2.WinForms.Guna2DateTimePicker txtCheckOutDate;
+        private System.Windows.Forms.Label label23;
     }
 }

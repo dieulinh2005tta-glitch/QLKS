@@ -47,6 +47,8 @@
             this.btnSua = new Guna.UI2.WinForms.Guna2Button();
             this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
             this.btnExel = new Guna.UI2.WinForms.Guna2Button();
+            this.txtPricePerHour = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -106,7 +108,7 @@
             "Don",
             "Doi",
             "VIP"});
-            this.txtRoomType.Location = new System.Drawing.Point(1088, 318);
+            this.txtRoomType.Location = new System.Drawing.Point(1088, 299);
             this.txtRoomType.Name = "txtRoomType";
             this.txtRoomType.Size = new System.Drawing.Size(609, 36);
             this.txtRoomType.TabIndex = 4;
@@ -116,7 +118,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(1096, 278);
+            this.label3.Location = new System.Drawing.Point(1096, 259);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(99, 22);
             this.label3.TabIndex = 5;
@@ -134,7 +136,7 @@
             this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrice.ForeColor = System.Drawing.Color.Black;
             this.txtPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPrice.Location = new System.Drawing.Point(1088, 573);
+            this.txtPrice.Location = new System.Drawing.Point(1088, 494);
             this.txtPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.PasswordChar = '\0';
@@ -148,7 +150,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(1096, 533);
+            this.label4.Location = new System.Drawing.Point(1096, 454);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(79, 22);
             this.label4.TabIndex = 6;
@@ -159,7 +161,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(1096, 399);
+            this.label5.Location = new System.Drawing.Point(1096, 362);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(111, 22);
             this.label5.TabIndex = 9;
@@ -179,7 +181,7 @@
             "Don",
             "Doi",
             "Ba"});
-            this.txtBed.Location = new System.Drawing.Point(1088, 439);
+            this.txtBed.Location = new System.Drawing.Point(1088, 402);
             this.txtBed.Name = "txtBed";
             this.txtBed.Size = new System.Drawing.Size(609, 36);
             this.txtBed.TabIndex = 8;
@@ -327,10 +329,46 @@
             this.btnExel.Text = "Xuất Exel";
             this.btnExel.Click += new System.EventHandler(this.btnExel_Click);
             // 
+            // txtPricePerHour
+            // 
+            this.txtPricePerHour.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPricePerHour.DefaultText = "";
+            this.txtPricePerHour.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPricePerHour.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPricePerHour.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPricePerHour.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPricePerHour.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPricePerHour.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPricePerHour.ForeColor = System.Drawing.Color.Black;
+            this.txtPricePerHour.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPricePerHour.Location = new System.Drawing.Point(1088, 613);
+            this.txtPricePerHour.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPricePerHour.Name = "txtPricePerHour";
+            this.txtPricePerHour.PasswordChar = '\0';
+            this.txtPricePerHour.PlaceholderText = "";
+            this.txtPricePerHour.SelectedText = "";
+            this.txtPricePerHour.Size = new System.Drawing.Size(609, 65);
+            this.txtPricePerHour.TabIndex = 16;
+            this.txtPricePerHour.Visible = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(1096, 573);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(148, 22);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Giá Tiền theo giờ";
+            this.label6.Visible = false;
+            // 
             // UC_AddRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.txtPricePerHour);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnExel);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
@@ -373,5 +411,7 @@
         private Guna.UI2.WinForms.Guna2Button btnXoa;
         private Guna.UI2.WinForms.Guna2Button btnSua;
         private Guna.UI2.WinForms.Guna2Button btnExel;
+        private Guna.UI2.WinForms.Guna2TextBox txtPricePerHour;
+        private System.Windows.Forms.Label label6;
     }
 }

@@ -37,10 +37,11 @@ namespace QLKS1.All_User_Control
                 String type = txtRoomType.Text;
                 String bed = txtBed.Text;
                 Int64 price = Int64.Parse(txtPrice.Text);
+                Int64 priceperhour = Int64.Parse(txtPricePerHour.Text);
 
 
 
-                query = "insert into rooms (roomNo, roomType, bed, price) values ('" + roomno + "','" + type + "','" + bed + "'," + price + ")";
+                query = "insert into rooms (roomNo, roomType, bed, price, price_per_hour) values ('" + roomno + "','" + type + "','" + bed + "'," + price + "','" + priceperhour + ",'NO')";
                 fn.setData(query, "Đã Thêm Phòng");
 
                 UC_AddRoom_Load(this, null);
@@ -109,6 +110,7 @@ namespace QLKS1.All_User_Control
                 txtRoomType.Text = row.Cells[2].Value.ToString();
                 txtBed.Text = row.Cells[3].Value.ToString();
                 txtPrice.Text = row.Cells[4].Value.ToString();
+                txtPricePerHour.Text = row.Cells[5].Value.ToString();
             }
 
 
